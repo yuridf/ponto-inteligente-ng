@@ -4,5 +4,12 @@
 </div>
 
 <div class="row">
-  <img src="www.google.com.br">
+  <div class="card" style="width:200px" *ngFor="let funcionario of listaFuncionario" >
+    <img class="card-img-top" src="{{funcionario.url}}" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{funcionario.lotacao}}</h4>
+      <p class="card-text">{{funcionario.nome}}</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
 </div>
